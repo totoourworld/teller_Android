@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rider.fenix.Allrides"
+    android:background="#F5FFFA">
+
+    <RelativeLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_marginLeft="20dp"
+        android1:layout_marginRight="20dp"
+        android1:layout_alignParentTop="true" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Completed List"
+            android:textColor="@color/theme"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <ListView
+            android1:id="@+id/listView1"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_below="@+id/textView1"
+            android1:dividerHeight="4px"
+            android:scrollbars="none" >
+
+        </ListView>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listempty"
+        android:id="@+id/listemptycompleted"
+        android:textSize="20dp"
+        android:textColor="@color/theme"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

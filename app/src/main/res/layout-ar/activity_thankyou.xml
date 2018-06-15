@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_thankyou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rider.xenia.ThankyouActivity"
+    android:background="@color/bt_white">
+
+    <com.custom.BTextView
+        android:id="@+id/submit_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Submit"
+        android:padding="10dp"
+        style="@style/Bottom_button_Style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:btextfont="@string/SFUIDisplay_Regular"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@id/submit_but"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+    <com.custom.BTextView
+    app:btextfont="@string/RobotoCondensed"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/facebookbns"
+    android:gravity="center"
+    android:text="FEEDBACK"
+    android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+    android:textColor="@color/blue_color"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    />
+
+
+    <com.custom.BTextView
+    app:btextfont="@string/RobotoCondensed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Thanks For"
+    android:textAllCaps="true"
+        android:layout_marginTop="25dp"
+    android:textColor="@color/blue_color"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    />
+
+
+    <com.custom.BTextView
+    app:btextfont="@string/RobotoCondensed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Riding with free bree"
+    android:textAllCaps="true"
+    android:layout_marginTop="5dp"
+    android:textColor="@color/yellow_color"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    />
+
+    <com.custom.BTextView
+        app:btextfont="@string/RobotoCondensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please rate your feedback below"
+        android:textAllCaps="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/blue_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+
+        <RatingBar
+            android:id="@+id/fare_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp" />
+
+    <com.custom.BTextView
+        app:btextfont="@string/RobotoCondensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add A Note(Optional)"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/blue_color"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:id="@+id/picup_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="bottom|center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="30"
+            android:src="@drawable/hexagon_shape"
+            />
+        <com.custom.BTextView         app:btextfont="@string/RobotoCondensed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue_color"
+            android:textSize="16dp"
+            android:text="Add\nNote"/>
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <com.custom.BTextView
+            android:id="@+id/CREATEANACCOUNT"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/contact_us"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/Back_button_Style"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/header_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <com.custom.BTextView
+                android:id="@+id/twiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/twitter"
+                android:gravity="left"
+                android:textColor="@color/black_dark"
+                android:textSize="18sp"
+                app:btextfont="@string/RobotoCondensed" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/twitter_icon"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <com.custom.BTextView
+                android:id="@+id/emailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:text="@string/emailId"
+                android:textColor="@color/black_dark"
+                android:textSize="18sp"
+                app:btextfont="@string/RobotoCondensed" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/email_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_whatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <com.custom.BTextView
+                android:id="@+id/whatsApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/whatsApp"
+                android:textColor="@color/black_dark"
+                android:textSize="18sp"
+                app:btextfont="@string/RobotoCondensed" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/whatsapp_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+

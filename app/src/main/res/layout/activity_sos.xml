@@ -1,0 +1,87 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context="com.rider.xenia.SosActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color">
+
+        <com.custom.BTextView
+            android:id="@+id/textView14"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SOS"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <ImageButton
+            android:id="@+id/recancel"
+            style="@style/Back_button_Style"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.custom.BButton
+            android:id="@+id/sos_alert_via_facebook"
+            style="@style/Bottom_button_Style_update"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/facebook_sos"
+            android:text="@string/Alert_Facebook"
+            android:textSize="16sp"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <com.custom.BButton
+            android:id="@+id/sos_alert_via_email"
+            style="@style/Bottom_button_Style_update"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/msg_sos"
+            android:text="@string/Alert_Email"
+            android:textSize="16sp"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <com.custom.BButton
+            android:id="@+id/sos_alert_via_sms"
+            style="@style/Bottom_button_Style_update"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/sms_sos"
+            android:text="@string/Alert_SMS"
+            android:textSize="15sp"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <com.custom.BButton
+            android:id="@+id/sos_settings"
+            style="@style/Bottom_button_Style_update"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/Settings"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            app:btextfont="@string/RobotoCondensed" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

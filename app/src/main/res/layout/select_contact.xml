@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectContacts">
+ <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+  
+       <Button
+           android:id="@+id/cancelsplit"
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="wrap_content"
+           android:layout_height="50dp"
+           android:layout_alignParentLeft="true"
+           android:background="@color/theme"
+           android:drawableRight="@drawable/arrowback"
+           android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/invitesplit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/sendsplit"
+        android:layout_toRightOf="@+id/cancelsplit"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:text="@string/Invite_Ride_Share"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/sendsplit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme"
+        android:drawableRight="@drawable/done"
+        android:paddingRight="5dp" />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#fff"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/cancelsplit"
+        android:id="@+id/frag">
+ 
+        <TextView
+            android:id="@+id/srchHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Search_name"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            />
+ 
+        <SearchView
+            android:background="#fff"
+            android:padding="18dp"
+            android:id="@+id/searchView"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+
+            ></SearchView>
+    </FrameLayout>
+ 
+    <ListView
+        android:layout_below="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contacts_list"
+        android:background="#F5FFFA"></ListView>
+ 
+</RelativeLayout>

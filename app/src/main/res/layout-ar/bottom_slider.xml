@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/fare_details_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:src="@drawable/hide_info"/>
+
+        <com.custom.BTextView
+            android:id="@+id/tv_price_calculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="@color/black_dark"
+            android:text="@string/price_calculator"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:btextfont="@string/RobotoCondensed" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fare_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/max_size_value"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/distance_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+                    <com.custom.BTextView
+                        android:id="@+id/per_Km_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/desh"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+                    <com.custom.BTextView
+                        android:id="@+id/per_Km_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/per_km"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/min_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <com.custom.BTextView
+                        android:id="@+id/per_min_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/desh"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+                    <com.custom.BTextView
+                        android:id="@+id/per_min_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/per_min"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <com.custom.BTextView
+                android:id="@+id/max_size_value"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/desh"
+                android:layout_toLeftOf="@+id/icon"
+                android:gravity="center"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+
+            <com.rider.xenia.CircularImageView1
+                android:id="@+id/icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circleuser"
+                android:scaleType="centerCrop" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/meter_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/meter_icon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/meter_image"
+                android:weightSum="3">
+
+                <com.custom.BTextView
+                    android:id="@+id/estimate_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/desh"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BTextView
+                    android:id="@+id/distance_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/desh"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BTextView
+                    android:id="@+id/time_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/desh"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+                    <com.custom.BTextView
+                        android:id="@+id/base_fare_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/desh"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+                    <com.custom.BTextView
+                        android:id="@+id/base_fare_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/base_fare"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.custom.BTextView
+                        android:id="@+id/per_Km_value1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/desh"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+                    <com.custom.BTextView
+                        android:id="@+id/per_Km_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/per_km"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <com.custom.BTextView
+                        android:id="@+id/per_min_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/per_min"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+                    <com.custom.BTextView
+                        android:id="@+id/per_min_value1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/desh"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <com.custom.BTextView
+                        android:id="@+id/distance_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/distance_text"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+                    <com.custom.BTextView
+                        android:id="@+id/distance_value1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/desh"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <com.custom.BTextView
+                    android:id="@+id/max_size_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/max_size"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+                <com.custom.BTextView
+                    android:id="@+id/max_size_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/desh"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+                <com.custom.BTextView
+                    android:id="@+id/estimate_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/estimate"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+                <com.custom.BTextView
+                    android:id="@+id/estimate_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/desh"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.custom.BTextView
+            android:id="@+id/estmate_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="@string/string_note_estimate"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            app:btextfont="@string/RobotoCondensed" />
+    </LinearLayout>
+
+</LinearLayout>

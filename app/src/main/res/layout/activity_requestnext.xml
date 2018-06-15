@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context="com.rider.xenia.RequestnextActivity">
+
+    <TextView
+        android:id="@+id/Requesttext"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/REQUESTING"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Requesttext"
+        android:src="@drawable/route_track1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/route_circle" />
+
+    <Button
+        android:id="@+id/enterurdesination"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="33dp"
+        android:background="#F5FFFA"
+        android:drawableLeft="@drawable/searchblue"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:text="@string/Enter_destination"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        android:text="@string/Once_car_share_the_destination"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterurdesination"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/route_track2" />
+
+    <Button
+        android:id="@+id/backline"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/Requesttext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/arrowback" />
+
+</RelativeLayout>

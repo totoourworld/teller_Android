@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <com.custom.BTextView
+            android:id="@+id/place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="Location"
+            android:textColor="@color/black_dark"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@+id/drawicon"
+            android:visibility="gone"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            app:btextfont="@string/RobotoCondensed"/>
+
+        <com.custom.BTextView
+            android:id="@+id/place_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@+id/place_name"
+            android:text="Location Detail"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/black_dark"
+            app:btextfont="@string/RobotoCondensed"/>
+
+        <ImageView
+            android:id="@+id/drawicon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+          android:layout_alignParentRight="true"
+            android:src="@drawable/manmap_black"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

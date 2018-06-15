@@ -1,0 +1,333 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rider.fenix.RideLater"
+    android:background="@color/theme">
+
+    <ImageView
+        android:id="@+id/paymentimage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cancelp"
+        android:scaleType="fitXY"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/cancelp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:textSize="15sp"
+        android:background="@drawable/arrowback"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="5dp"
+       />
+
+    <Button
+        android:id="@+id/promo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:background="@drawable/arrownext"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="11dp"
+        />
+
+    <TextView
+        android:id="@+id/RiderLater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/promo"
+        android:layout_toRightOf="@+id/cancelp"
+        android:gravity="center"
+        android:text="Ride Later"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@color/theme"
+        android:textColor="#FFFFFF"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#F5FFFA"
+
+        android:layout_below="@+id/paymentimage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pickupdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="#e7f6fd"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:text="Your Pickup Date"
+                    android:textSize="15dp"
+                    android:textColor="#545454" />
+
+                <TextView
+                    android:id="@+id/txtselectdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:text="Select Date"
+                    android:onClick="showDatePickerDialog"
+                    android:textSize="15dp"
+                    android:textColor="#545454"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickuptime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#e7f6fd"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/txttime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Your Pickup Time"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="3dp"
+
+                    android:textColor="#545454" />
+
+                <TextView
+                    android:id="@+id/txtselecttime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Select Time"
+                    android:textSize="15sp"
+                    android:onClick="showTimePickerDialog"
+                    android:textColor="#545454"
+                    android:layout_marginBottom="3dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pickuptime"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#e7f6fd">
+
+                <!--    <ImageView
+                        android:id="@+id/shr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/atv_places"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/hr_line" />
+     -->
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/placeserach" />
+
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+
+                    android:src="@drawable/cross" />
+
+                <com.rider.xenia.CustomAutoCompleteTextView
+                    android:id="@+id/atv_places"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Enter your Pickup location"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/imageView1"
+                    android:layout_alignStart="@+id/imageView1">
+
+                    <requestFocus />
+                </com.rider.xenia.CustomAutoCompleteTextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pickuptime"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#e7f6fd">
+
+                <!--    <ImageView
+                        android:id="@+id/shr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/atv_places"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/hr_line" />
+     -->
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/placeserach" />
+
+                <com.rider.xenia.CustomAutoCompleteTextView
+                    android:id="@+id/atv_places1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView2"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Enter your Drop Location"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/clear1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/cross" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pickuptime"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp">
+
+            <Spinner
+                android:id="@+id/categorylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_box"
+                android:popupBackground="@drawable/white_box"
+                android:textColor="#545454"
+                android:spinnerMode="dropdown"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Spinner
+                android:id="@+id/carlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#545454"
+                android:background="@drawable/white_box"
+                android:popupBackground="@drawable/white_box"
+                android:spinnerMode="dropdown"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/categorylist"
+                android:layout_alignRight="@+id/categorylist"
+                android:layout_alignLeft="@+id/categorylist" />
+            <EditText
+                android:id="@+id/addcar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carlist"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Enter your car name"
+                android:textColor="#545454"
+                android:textSize="18dp"
+                android:paddingLeft="5dp"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:background="@drawable/white_box"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

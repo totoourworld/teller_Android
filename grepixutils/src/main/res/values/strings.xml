@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TestLibrary</string>
+    <string name="required">Required</string>
+    <string name="invalid_email_id">Invalid Email Id</string>
+    <string name="please_enter_your_valid_number">Enter valid mobile number</string>
+    <string name="password_lenght_should_be_alleast">Password length should be al least 6</string>
+    <string name="password_not_match">Password not match</string>
+    <string name="enter_old_password">Enter old Password</string>
+    <string name="enter_new_password">Enter new Password</string>
+    <string name="re_enter_password">Re enter Password</string>
+    <string name="old_password_is_not_correct">Old Password is not currect</string>
+    <string name="atleast_one_contact_require">Atleast one Contact require</string>
+    <string name="invalid_mobile_number">Invalid mobile number</string>
+    <string name="atleast_one_email_required">Atleast one Email require</string>
+    <string name="invalid_email_1_field">Invalid Email 1 field</string>
+    <string name="invalid_email_2_field">Invalid Email 2 field</string>
+    <string name="invalid_email_3_field">Invalid Email 3 field</string>
+    <string name="network">"No internet connection! Retry"</string>
+</resources>

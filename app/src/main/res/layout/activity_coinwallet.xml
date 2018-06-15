@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context="com.rider.xenia.WalletActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color">
+
+        <com.custom.BTextView
+            android:id="@+id/textView14"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WALLET"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <ImageButton
+            android:id="@+id/recancel"
+            style="@style/Back_button_Style"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/xenia_wallet"
+            android:textSize="18sp" />
+
+        <com.custom.BButton
+            android:id="@+id/xenia_signup"
+            style="@style/Bottom_button_Style_update"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/XENIA_SIGNUP"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:btextfont="@string/RobotoCondensed" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

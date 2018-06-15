@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arcane.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/signimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="#F5FFFA" />
+
+    <Button
+        android:id="@+id/cancelcs"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/theme"
+        android:drawableRight="@drawable/arrowback"
+        android:paddingLeft="2dp"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/donecs"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme"
+        android:drawableRight="@drawable/done"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/commingsoon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/donecs"
+        android:layout_toRightOf="@+id/cancelcs"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:text="@string/comming_soon"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/commingsoontext"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/cancelcs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp"
+        android:gravity="center"
+        android:text="@string/comming_soon_dots"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/theme"
+        android:textSize="30sp" />
+
+</RelativeLayout>

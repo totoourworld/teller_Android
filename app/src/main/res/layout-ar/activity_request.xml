@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5fffa"
+    tools:context="com.rider.xenia.RequestActivity">
+
+    <TextView
+        android:id="@+id/Requesttext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:text="@string/Requesting"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/theme"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/reprogresstimer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="1" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reprogresstimer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:text="@string/cancel_request"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

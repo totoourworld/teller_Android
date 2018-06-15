@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rider.xenia.SlideMainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.custom.BButton
+                app:btextfont="@string/SFUIDisplay_Regular"
+                android:id="@+id/paypal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext"
+                android:text="@string/PayPal_Payment"
+                android:textColor="@color/blue_color" />
+
+            <com.custom.BButton
+                app:btextfont="@string/SFUIDisplay_Regular"
+                android:id="@+id/braintree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/paypal"
+                android:background="@drawable/edittext"
+                android:text="@string/braintree_payment"
+                android:textColor="@color/blue_color" />
+
+            <com.custom.BButton
+                app:btextfont="@string/SFUIDisplay_Regular"
+                android:id="@+id/mercadopago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/braintree"
+                android:background="@drawable/edittext"
+                android:text="@string/Credit_Card_Payment"
+                android:textColor="@color/blue_color" />
+
+            <com.custom.BButton
+                app:btextfont="@string/SFUIDisplay_Regular"
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/mercadopago"
+                android:background="@drawable/edittext"
+                android:text="@string/Cash_Hand"
+                android:textColor="@color/blue_color" />
+
+
+            <com.custom.BButton
+                app:btextfont="@string/SFUIDisplay_Regular"
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/cash"
+                android:background="@drawable/edittext"
+                android:text="@string/Cancel"
+                android:textColor="@color/blue_color" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

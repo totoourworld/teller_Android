@@ -1,0 +1,244 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color">
+
+        <com.custom.BTextView
+            android:id="@+id/textView14"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/SOS"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <ImageButton
+            android:id="@+id/settg_back"
+            style="@style/Back_button_Style"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header_layout"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.rider.xenia.Settings">
+
+            <com.custom.BEditText
+                android:id="@+id/settg_contact1"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Contact1"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BEditText
+                android:id="@+id/settg_contact2"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/settg_contact1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Contact2"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BEditText
+                android:id="@+id/settg_contact3"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/settg_contact2"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/settg_contact2"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Contact3"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BEditText
+                android:id="@+id/settg_email1"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Emaill"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BEditText
+                android:id="@+id/settg_email2"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/settg_email1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/Email2"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BButton
+                android:id="@+id/settg_bt_update_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/settg_contact3"
+                android:layout_alignRight="@+id/settg_contact3"
+                android:layout_below="@+id/settg_contact3"
+                android:layout_marginTop="28dp"
+                android:background="@color/yellow_color"
+                android:text="@string/UPDATE"
+                android:textColor="@color/blue_color"
+                android:textSize="16sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BButton
+                android:id="@+id/settg_bt_update_email"
+                style="@style/Bottom_button_Style_update"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/settg_email1"
+                android:layout_alignRight="@+id/settg_email3"
+                android:layout_below="@+id/settg_email3"
+                android:layout_marginTop="28dp"
+                android:text="@string/UPDATE"
+                android:textSize="16sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BEditText
+                android:id="@+id/settg_email3"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/settg_email2"
+                android:layout_alignRight="@+id/settg_email2"
+                android:layout_below="@+id/settg_email2"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/settg_contact2"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/email3"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+
+            <com.custom.BTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settg_bt_update_contact"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="@string/Emergency_Email"
+                android:textColor="@color/blue_color"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="@string/Emergency_Contact"
+                android:textColor="@color/blue_color"
+                android:textSize="15sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/settg_bt_update_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text=""
+                app:btextfont="@string/RobotoCondensed" />
+
+            <!-- <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="New Button"
+                 android:id="@+id/button4"
+                 android:layout_alignParentTop="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/pback"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:background="@color/theme"-->
+            <!--android:drawableRight="@drawable/arrowback"-->
+            <!--android:paddingRight="5dp"-->
+            <!--/>-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

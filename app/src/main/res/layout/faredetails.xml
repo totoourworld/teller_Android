@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context="com.rider.xenia.SlideMainActivity"
+    android:layout_marginTop="20dp">
+<LinearLayout
+     android:id="@+id/basefarelin"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:orientation="horizontal"
+     android:weightSum="3"
+     android:layout_gravity="center" 
+     android:gravity="center"
+     android:layout_marginRight="5dp"
+     android:layout_marginTop="5dp"
+     android:layout_marginLeft="10dp">
+    <TextView
+        android:id="@+id/baseamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center" 
+     android:gravity="center"
+        android:text="$120"
+        android:textSize="16dp"
+        android:textColor="@color/theme"/>
+
+        <TextView
+            android:id="@+id/baseamounttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base Fare"
+            android:layout_gravity="center" 
+     android:gravity="center"
+            android:textColor="#aba6a6"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp" />
+        </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/design"
+    android:layout_width="165dp"
+    android:layout_height="match_parent"
+    android:layout_alignLeft="@+id/basefarelin"
+    android:layout_alignRight="@+id/basefarelin"
+    android:layout_below="@+id/basefarelin"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="center" 
+     android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/hr_line" />
+
+     <TextView
+            android:id="@+id/andd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ \n and"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_weight="1" />
+     <ImageView
+        android:id="@+id/imageView2"
+      android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/hr_line" 
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/kmandmins"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/design"
+    android:layout_alignRight="@+id/design"
+    android:layout_below="@+id/design"
+    android:orientation="horizontal"
+	android:layout_marginLeft="10dp" 
+	android:layout_marginBottom="10dp"   
+	android:layout_gravity="center" 
+    android:gravity="center" android:weightSum="2" >
+<LinearLayout
+     android:id="@+id/km"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:orientation="horizontal"
+     android:weightSum="2"
+     android:layout_gravity="center" 
+     android:gravity="center"
+     android:layout_marginTop="5dp">
+    <TextView
+        android:id="@+id/permin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+android:layout_gravity="center" 
+     android:gravity="center"        android:text="$12"
+        android:textSize="16dp"
+        android:textColor="@color/theme"/>
+
+        <TextView
+            android:id="@+id/permintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/Min"
+            android:textColor="#aba6a6"
+            android:textSize="16dp"
+            android:layout_gravity="center" 
+     android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+     android:id="@+id/kmlay"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:orientation="horizontal"
+     android:weightSum="2"
+     android:layout_marginLeft="18dp"
+     android:layout_marginTop="5dp"
+     android:layout_gravity="center" 
+     android:gravity="center">
+    <TextView
+        android:id="@+id/perkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="$12"
+        android:textSize="16dp" android:layout_gravity="center"
+     android:gravity="center"
+        android:textColor="@color/theme"/>
+
+        <TextView
+            android:id="@+id/perkmtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/KM"
+            android:textColor="#aba6a6"
+            android:textSize="16dp"
+            android:layout_gravity="center" 
+     android:gravity="center" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

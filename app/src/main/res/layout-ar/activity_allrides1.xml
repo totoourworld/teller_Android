@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rider.fenix.Allrides"
+    android:background="#F5FFFA">
+
+    <RelativeLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_marginLeft="20dp"
+        android1:layout_marginRight="20dp"
+        android1:layout_alignParentTop="true" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/all_rides"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/theme" />
+
+        <ListView
+            android1:id="@+id/listView1"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:layout_below="@+id/textView1"
+            android:dividerHeight="5px" >
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listempty"
+        android:id="@+id/listemptyallride"
+        android:textSize="20sp"
+        android:textColor="@color/theme"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

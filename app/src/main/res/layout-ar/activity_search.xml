@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FFFA"
+    tools:context=".SearchActivity">
+
+    <com.rider.xenia.CustomAutoCompleteTextView
+        android:id="@+id/atv_places"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/scancel"
+        android:background="@drawable/edittext"
+        android:hint="@string/Enter_Place_Here"
+        android:paddingLeft="60dp"
+        android:paddingRight="30dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/scancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/atv_places"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:text="@string/Cancel"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/shr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/atv_places"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/hr_line" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/searchblue" />
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/atv_places"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/cross" />
+
+</RelativeLayout>

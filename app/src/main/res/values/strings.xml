@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Xenia Teller</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">SETTINGS</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- ************Need To Change the following Codes ******************** -->
+
+    <string name="googleapikey">AIzaSyDJ6wbuMgKlCG4hCFlYBuKha4AeV7PaxSs</string>
+    <string name="googleprojectid">391226754417</string>
+    <string name="facebook_app_id">886976498098633</string>
+    <string name="banner_ad_footer">ca-app-pub-8123127367442961/9773585937</string>
+    <!-- <string name="LiveUrl">http://demo.cogzidel.com/arcanemobile/users/</string>
+     <string name="LiveUrl1">http://demo.cogzidel.com/arcanemobile/drivers/</string>
+     <string name="LiveUrl2">http://demo.cogzidel.com/arcanemobile/administrator/</string>-->
+    <string name="version">v2.1.1</string>
+    <!-- <string name="LiveUrl">http://products.cogzidel.com/arcanemobile/users/</string>
+     <string name="LiveUrl1">http://products.cogzidel.com/arcanemobile/drivers/</string>
+     <string name="LiveUrl2">http://products.cogzidel.com/arcanemobile/administrator/</string>-->
+
+
+    <string name="LiveUrl">http://aploads.com/development/Taxi/index.php/userapi/</string>
+    <string name="LiveUrl1">http://products.cogzidel.com/arcanemobile/drivers/</string>
+    <string name="LiveUrl2">http://products.cogzidel.com/arcanemobile/administrator/</string>
+
+    <!-- ****************************************************************** -->
+
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_payment_details">PaymentDetailsActivity</string>
+    <string name="title_activity_scanactivity">SacnActivity</string>
+    <string name="select"></string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="gcm_deleted">GCM: server deleted %1$d pending messages!</string>
+    <string name="gcm_registered">GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">GCM: device successfully unregistered!</string>
+    <string name="gcm_message">GCM: you got message!</string>
+    <string name="gcm_error">GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">GCM: recoverable error (%1$s).</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">Demo Server: successfully added device!</string>
+    <string name="server_unregistered">Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="contact_us">Contact Us</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="profile_list">
+        <item>     Profile  </item>
+        <item>     SOS </item>
+        <item>     Trip History  </item>
+        <!-- <item>     Rating  </item>-->
+        <!--       <item>     Terms of Use </item>-->
+        <item>     Share </item>
+        <item>     Deactivate </item>
+        <item>     Support</item>
+        <item>     Wallet</item>
+        <item>     Xenia Coin</item>
+        <item>     Logout</item>
+    </string-array>
+
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/man11</item>
+        <item>@drawable/sos_new1</item>
+        <item>@drawable/history11</item>
+        <!--   <item>@drawable/term_of_use</item>-->
+        <item>@drawable/share</item>
+        <item>@drawable/deactivate</item>
+        <item>@drawable/support1</item>
+        <item>@drawable/wallet</item>
+        <item>@drawable/xeniacoin</item>
+        <item>@drawable/logout1</item>
+    </array>
+
+
+    <!-- </array> -->
+
+    <string name="editprofile">EditProfile</string>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="CreditCardNumberHelp">Enter credit or debit card number</string>
+    <string name="ExpirationDateHelp">Expiration date (MM/DD)</string>
+    <string name="SecurityCodeHelp">Security code</string>
+    <string name="ZipHelp">Zip code of billing address</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_resetpassword">Resetpassword</string>
+    <string name="title_activity_request">RequestActivity</string>
+    <string name="title_activity_fare_review">FareReviewActivity</string>
+    <string name="title_activity_pay_pal">PayPalActivity</string>
+    <string name="title_activity_google_plus">GooglePlusActivity</string>
+    <string name="title_activity_requestnext">RequestnextActivity</string>
+    <string name="title_activity_regin_search">ReginSearchActivity</string>
+
+    <string name="Credit_card">Credit/Debit Card</string>
+    <string name="ADD_PAYMENT">Add Payment</string>
+    <string name="trip_has_been_completed">Amount will be deducted once trip has been completed.</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Done">Done</string>
+    <string name="Comming_Soon">Comming Soon</string>
+    <string name="Invite_to_Ride_Share">Invite to Ride Share</string>
+    <string name="Send">Send</string>
+    <string name="Last_Name">LAST NAME</string>
+    <string name="Mobile">MOBILE</string>
+    <string name="reg_Name">NAME</string>
+    <string name="Password">PASSWORD</string>
+    <string name="re_Password">CONFIRM PASSWORD</string>
+    <string name="Account">Account</string>
+    <string name="Email">EMAIL</string>
+    <string name="PayPal_Email">PayPal Email</string>
+    <string name="First_Name">FIRST NAME</string>
+    <string name="verify_accoount">VERIFY PROFILE</string>
+
+    <string name="PROFILE">Profile</string>
+    <string name="Fare_Summary">Fare Summary</string>
+    <string name="Amount_paid">Amount to be paid</string>
+    <string name="$25">$25.00</string>
+    <string name="Submit">Submit</string>
+    <string name="Select_stars">Select 1-5 stars to rate your driver</string>
+    <string name="Leave_command">Leave your command</string>
+    <string name="Fare_Review">I need a Fare Review</string>
+    <string name="Go_to_home">Go to Map</string>
+    <string name="Promo">Promo</string>
+    <string name="Fare_review">Fare Review</string>
+    <string name="Trip_ID">Trip ID</string>
+    <string name="Driver_ID">Driver ID</string>
+    <string name="Pickup_Location">Pickup Location</string>
+    <string name="Drop_Location">Drop Location</string>
+    <string name="Total_Distance">Total Distance</string>
+    <string name="Charge">Charge</string>
+    <string name="Waiting_Charge">Waiting Charge</string>
+    <string name="Tax">Tax</string>
+    <string name="Total">Total</string>
+    <string name="SIGN_IN">Sign In</string>
+    <string name="REGISTER">Register</string>
+    <string name="New_Password">NEW PASSWORD</string>
+    <string name="Old_Password">CURRENT PASSWORD</string>
+    <string name="Confirm_password">CONFIRM PASSWORD</string>
+    <string name="Edit">Edit</string>
+    <string name="Back">Back</string>
+    <string name="REGION_SEARCH">Region Search</string>
+    <string name="Enable_Region_Search">Enable Region Search</string>
+    <string name="Next">Next</string>
+    <string name="CREATE_AN_ACCOUNT">Create An Account</string>
+    <string name="email_and_mobile_number_to_send_ride">We use your email id and mobile number to send ride confirmation and receipt.</string>
+    <string name="Requesting">Requesting...</string>
+    <string name="Cancel_Request">Cancel Request</string>
+    <string name="REQUESTING">Requesting</string>
+    <string name="Enter_destination">Enter your destination</string>
+    <string name="Once_car_share_the_destination">Once you are in the car, we\'ll share the destination with your driver.</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="RESET_PASSWORD">Reset Password</string>
+    <string name="FORGOT_PASSWORD">Forgot Password</string>
+    <string name="Enter_your_email_address">*Please enter your email address and we\'ll send you a new password</string>
+    <string name="Enter_Place_Here">Enter Place Here</string>
+    <string name="Contact1">CONTACT 1</string>
+    <string name="Contact2">CONTACT 2</string>
+    <string name="Contact3">CONTACT 3</string>
+    <string name="Email1" />
+    <string name="Emaill">EMAIL 1</string>
+    <string name="Email2">EMAIL 2</string>
+    <string name="UPDATE">UPDATE</string>
+    <string name="Emergency_Email">EMERGENCY EMAILS</string>
+    <string name="SETTINGS">Settings</string>
+    <string name="Emergency_Contact">EMERGENCY CONTACTS</string>
+    <string name="VERIFY_PROFILE">Verify Profile</string>
+    <string name="PayPal_EmailAddress">PayPal Email Address</string>
+    <string name="Mobile_Number">Mobile Number</string>
+    <string name="SOS">SOS</string>
+    <string name="WALLET">Coin Wallet</string>
+    <string name="XENIA_COIN">XeniaCoin</string>
+    <string name="XENIA_SIGNUP">SignUp</string>
+    <string name="WALLET_ORDER">Order Prepaid Card</string>
+    <string name="Alert_Email">Alert via Gmail</string>
+    <string name="Alert_Facebook">Alert via Facebook</string>
+    <string name="Settings">Settings</string>
+    <string name="Alert_SMS">Alert via SMS</string>
+    <string name="Staff_Details">Staff Details</string>
+    <string name="Name">Name</string>
+    <string name="Medium_Text">Medium Text</string>
+    <string name="Age">Age</string>
+    <string name="Gender">Gender</string>
+    <string name="Experience">Experience</string>
+    <string name="Invite_Split">Invite to Split</string>
+    <string name="Search_contacts">Search contacts</string>
+    <string name="Scan_a_credit_card_card.io">Scan a credit card with card.io</string>
+    <string name="PayPal_Payment">PayPal Payment</string>
+    <string name="Credit_Card_Payment">Credit Card Payment</string>
+    <string name="Mercadopago_Payment">Mercadopago Payment</string>
+    <string name="Cash_Hand">Cash on Hand</string>
+    <string name="Invite_Ride_Share">Invite to Ride Share</string>
+    <string name="Search_name">Search name</string>
+    <string name="PICKUP_LOCATION">Pickup Location</string>
+    <string name="Getting_location">Getting location</string>
+    <string name="Driver_Name">Driver Name</string>
+    <string name="Driver_Car">Driver Car</string>
+    <string name="Rate">Rate</string>
+    <string name="REQUEST">Request</string>
+    <string name="Pickup_Minutes">Pickup Minutes</string>
+    <string name="CANCEL">Cancel</string>
+    <string name="CONFIRMATION">Confirmation</string>
+    <string name="content">content</string>
+    <string name="Hatchback">Hatchback</string>
+    <string name="Sedan">Sedan</string>
+    <string name="SUV">SUV</string>
+    <string name="ETA">ETA</string>
+    <string name="MAX_SIZE">Max Size</string>
+    <string name="MIN_FARE">Min Fare</string>
+    <string name="GET_FARE_ESTIMATE">Get Fare Estimate</string>
+    <string name="SPLITING_1_WAY">Spliting Fare 1 Way</string>
+    <string name="Accepted_RiderName">Accepted Rider Name</string>
+    <string name="NOT_SPLITING">Not Spliting Fare</string>
+    <string name="Not_Splited_RiderName">Not Splited Rider Name</string>
+    <string name="DECLINE">Decline</string>
+    <string name="ACCEPT">Accept</string>
+    <string name="name_reg">NAME</string>
+    <string name="with_name">with name</string>
+    <string name="User_name">User name</string>
+    <string name="Phone_no">Mobile No.</string>
+    <string name="network_error">Network Connection Error...</string>
+    <string name="please_connect">There is no network please connect</string>
+    <string name="ok">Ok</string>
+    <string name="waiting_cancel">Waiting for cancel from driver.</string>
+    <string name="please_enter_your_valid_number">Enter valid mobile number</string>
+    <string name="get_location">Getting location</string>
+    <string name="fare_details">Fare Details</string>
+    <string name="begin_trip">Begin Trip</string>
+    <string name="begin_now">Your trip begin now.</string>
+    <string name="trip_canceled">Trip cancelled</string>
+    <string name="cancel_reason">"The trip cancelled by Driver due to "</string>
+    <string name="driver_pickyou">"Driver will pick you within "</string>
+    <string name="reachyousoon">Reach you soon.</string>
+    <string name="exit">Exit</string>
+    <string name="close_arcane">Do you want close Arcane?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="driver_arrived">Driver has arrived now.</string>
+    <string name="gps_disabled">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="no">No</string>
+    <string name="driver_pick_loc">"Driver will pick you on your location within "</string>
+    <string name="driver_drop">"Driver will drop you on your destination within "</string>
+    <string name="braintree_payment">Braintree Payment</string>
+    <string name="thanks_driving">Thanks for riding.</string>
+    <string name="cash_received">Cash Received</string>
+    <string name="promoaccepted">Your Promo Accepted.</string>
+    <string name="payment_completed">"Payment completed successfully. "</string>
+    <string name="arrives_within">" arrives within "</string>
+    <string name="listempty">"There is no trips in your account"</string>
+    <string name="network">"No internet connection! Retry"</string>
+
+    <string name="xenia_wallet">"Xeniacoin ICO Pre-sale is on, get 30% bonus for a limited time.\nInvest in Coal mining/ Altcoins mining.\nThis is a token with with a payout!\nhttps://xeniacoin.org"</string>
+    <string name="card_order_almost_title">New cards are almost here</string>
+    <string name="card_order_almost_content">Don\'t miss the moment! Join the waiting list now and be among the first to collect new tried-and-true Xenia cards. \n\n Now, with the associated currency account!</string>
+    
+    <string name="card_order_finish_title">You\'ve been enlisted!</string>
+    <string name="card_order_finish_prefix">Your position is #</string>
+    <string name="card_order_finish_endfix"> in your region.\nWant to fast track your position?\nInvite your friend to join xenia.\nGet 10XEN free!</string>
+
+    <string name="join_list">Join waiting list</string>
+    <string name="invite_friend">Invite a friend</string>
+    <string name="invite_msg">XeniaTeller is  more than a crypto wallet, you can order a ride, be your own banker, withdraw cash through a teller closest to you download now!</string>
+
+    <!--    <string name="SFUIDisplay_Light">SFUIDisplay-Light.otf</string>
+    <string name="SFUIDisplay_Medium">SFUIDisplay-Medium.otf</string>
+    <string name="SFUIDisplay_Regular">SFUIDisplay-Regular.otf</string>
+    <string name="SFUIDisplay_Thin">SFUIDisplay-Thin.otf</string>
+    <string name="MyriadPro_Regular">MyriadPro-Regular.otf</string>
+    <string name="JosefinSans_Bold">JosefinSans-Bold.otf</string>-->
+    <string name="RobotoCondensed">RobotoCondensed-Regular.otf</string>
+    <!--    <string name="RobotoCondensed_ttf">RobotoCondensed-Regular.ttf</string>-->
+
+
+    <string name="destination_location">DESTINATION LOCATION</string>
+    <string name="enter_destination">Enter Destination</string>
+
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="prb_default_symbolic_string">✩</string>
+
+    <string name="set_pickup_location">Set Pickup Location</string>
+    <string name="do_you_want_exit_now">Do you want Exit now?</string>
+    <string name="do_you_want_deactivate_now">Do you want to deactivate your account now?</string>
+    <string name="min_fare">Min Fare</string>
+    <string name="loading">Loading...</string>
+    <string name="accept_your_request">Your taxi request is confirmed</string>
+    <string name="all_drivers_are_busy">All drivers are busy.</string>
+    <string name="desh">--</string>
+    <string name="searching_driver">Searching Driver..</string>
+    <string name="powered_by_cogzidel_technologies">Powered by Cogzidel Technologies</string>
+    <string name="no_destination_address_found">No Destination Address Found </string>
+    <string name="no_pickup_address_found">No Pick Up Address Found</string>
+    <string name="no_network_internet_connection_failed">No Network..Internet Connection Failed</string>
+    <string name="_0_nmin">0 Min</string>
+    <string name="waiting_for_driver">Waiting for Driver. Thanks for your patience</string>
+    <string name="driver_not_available">Driver not available</string>
+    <string name="sorryNo_nearby_driver_found">No Driver found.</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="please_enter_destination">Please enter destination address!</string>
+    <string name="connection_failed">Internet Connection Failed</string>
+
+    <string name="base_fare">Base Fare:</string>
+    <string name="per_km"> per Km</string>
+    <string name="per_min">per min</string>
+    <string name="distance_text">Distance:</string>
+    <string name="max_size">Max Size</string>
+    <string name="estimate">Estimate</string>
+
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="save">SAVE</string>
+    <string name="profile_updated">Profile updated sucessfully</string>
+    <string name="internet_connection_failed">Internet Connection Failed</string>
+    <string name="no_internet_connection">No internet available</string>
+    <string name="please_select_a_profile_image">Please select a Profile image</string>
+    <string name="camera">CAMERA</string>
+    <string name="gallery">GALLERY</string>
+    <string name="enter_old_password">Enter old Password</string>
+    <string name="enter_new_password">Enter new Password</string>
+    <string name="re_enter_password">Re enter Password</string>
+    <string name="password_not_match">Password not match</string>
+    <string name="old_password_is_not_correct">Old Password is not currect</string>
+    <string name="uploading">Uploading...</string>
+
+    <string name="trip_history">TRIP HISTORY</string>
+    <string name="all_rides">All Rides</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="comming_soon">Comming Soon</string>
+    <string name="comming_soon_dots">Comming Soon...</string>
+    <string name="end_trip">FARE SUMMARY</string>
+    <string name="hire_me_card">HIRE ME CARD</string>
+    <string name="amount_payable">Trip Cost:</string>
+    <string name="fare_review">FARE REVIEW</string>
+    <string name="home">HOME</string>
+    <string name="select_1_5_stars_to_rate_your_driver">Please rate driver.(1 for BAD &amp; 5 for BEST)</string>
+    <string name="skip">SKIP</string>
+    <string name="done">DONE</string>
+    <string name="promo_code">PROMO CODE</string>
+    <string name="apply">Apply</string>
+    <string name="submit">SUBMIT</string>
+    <string name="date_time">Date Time</string>
+    <string name="not_spliting_fare">Not Spliting Fare</string>
+
+    <string name="join_us">JOIN US</string>
+    <string name="join">JOIN</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or_sign_up_with">Or Sign up with</string>
+    <string name="facebook">Facebook</string>
+    <string name="cancel_request">Cancel request</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="settings">SETTINGS</string>
+    <string name="email3">EMAIL 3</string>
+    <string name="password">PASSWORD</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="or_sign_in_with">Or Sign in with</string>
+    <string name="google">Google</string>
+    <string name="my_rides">My Rides</string>
+    <string name="notification">Notification</string>
+    <string name="pay_with">Pay with:</string>
+    <string name="paypal_payment">Paypal</string>
+    <string name="cash_on_hand">Cash</string>
+    <string name="pickup">Pickup</string>
+    <string name="pickup_date">Pickup Date</string>
+    <string name="pickup_time">Pickup Time</string>
+    <string name="carname">Carname</string>
+    <string name="future_trip_detail_is_empty">Future trip detail is empty.</string>
+    <string name="we_are_reaching_at">Moving towards destination:</string>
+    <string name="time">time</string>
+    <string name="string_note_estimate">Note: This is an approximate estimate. Actual cost may vary due to traffic and running time.</string>
+    <string name="distance">Distance</string>
+    <string name="amount">Amount</string>
+    <string name="tax">Tax</string>
+    <string name="waiting_time">Waiting Time</string>
+    <string name="service">Service</string>
+    <string name="paypal">PayPal</string>
+    <string name="trip_detail">TRIP DETAIL</string>
+    <string name="rider_name">Rider Name</string>
+    <string name="drop">Drop</string>
+    <string name="date">Date</string>
+    <string name="trip_detail_is_empty">Trip detail is empty.</string>
+
+    <string name="push_notification">Push notification:</string>
+    <string name="facebook_access_token">Facebook Access Token :</string>
+    <string name="on_cancel">on Cancel :</string>
+    <string name="on_error">on Error :</string>
+    <string name="response_error">Response Error :</string>
+    <string name="required">Required</string>
+    <string name="login_canceled_by_user">Login cancelled by user!</string>
+    <string name="login_unsuccessful">Login unsuccessful!</string>
+    <string name="person_info_is_null">Person information is null</string>
+    <string name="you_have_already_logged_in_another_device">You have already logged in another device.</string>
+
+    <string name="internet_error">Internet Error</string>
+    <string name="invalid_email_id">Invalid Email Id</string>
+    <string name="password_lenght_should_be_alleast">Password length should be al least 6</string>
+    <string name="warning">Warning!</string>
+    <string name="check_your_emailId">Check Your Email ID</string>
+
+    <string name="please_help_i_am_in_danger">Please help, I am in danger and need assistance.Click here to view my location</string>
+    <string name="choose_an_email_client">Choose an Email client :</string>
+    <string name="message_sent_successfully">Message sent successfully</string>
+    <string name="message_no_found">Sorry ! contact number not found.</string>
+    <string name="generic_failure">Generic failure</string>
+    <string name="no_service">No service</string>
+    <string name="null_PDU">Null PDU</string>
+    <string name="radio_off">Radio off</string>
+    <string name="sms_delivered">SMS delivered</string>
+    <string name="sms_not_delivered">SMS not delivered</string>
+    <string name="atleast_one_email_required">Atleast one Email require</string>
+    <string name="invalid_email_1_field">Invalid Email 1 field</string>
+    <string name="invalid_email_2_field">Invalid Email 2 field</string>
+    <string name="invalid_email_3_field">Invalid Email 3 field</string>
+    <string name="atleast_one_contact_require">Atleast one Contact require</string>
+    <string name="invalid_mobile_number">Invalid mobile number</string>
+    <string name="enter_your_destination">Enter your destination</string>
+    <string name="your_destination_address_is_not_available">Your destination address is not available.</string>
+    <string name="could_you_retrive_fare">Could not retrive fare estimate at this time</string>
+
+    <string name="there_is_no_connection">There is no network please connect.</string>
+    <string name="enter_promo_code">Enter Promo Code</string>
+    <string name="fare_page">Fare Page</string>
+    <string name="cah_payment_received">Cash payment received by driver.</string>
+    <string name="invalid_promo_code">Invalid Promo Code</string>
+    <string name="payment_complete_successfully">Payment completed successfully.</string>
+    <string name="network_connection_error">Network Connection Error...</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="invalid_userId">Invalid User ID</string>
+    <string name="your_request_confirmed">Your request confirmed</string>
+    <string name="arcane_driver">Arcane Driver :</string>
+    <string name="all_drivers_currently_busy">All drivers are currently busy. Please try again</string>
+    <string name="error">Error:</string>
+    <string name="please_select_valid_time">Please Select Valid Time</string>
+    <string name="no_network_please_connect">There is no network please connect.</string>
+    <string name="select_all_fields">Select all fields</string>
+    <string name="fare_lookup_failed">FARE LOOKUP FAILED</string>
+    <string name="message">Message!</string>
+    <string name="select_max_1_contacts">Select Maximum 1 contacts only</string>
+    <string name="no_contacts_in_your_contact_list">No contacts in your contact list.</string>
+    <string name="alert">Alert</string>
+
+    <string name="sorry_internet_connection_is_too_weak">Sorry! Internet connection is too weak.</string>
+    <string name="latitude">Latitude =</string>
+    <string name="longitude">, Longitude =</string>
+    <string name="current_loc">Current Loc</string>
+
+    <string name="fare_amount">Fare Amount</string>
+    <string name="_1800_80">$1800.80</string>
+    <string name="promo_amount">Promo Discount</string>
+    <string name="service_tax">Tax</string>
+    <string name="total_pay_amount">Amount Paid</string>
+
+    <string name="Trip_id">Trip ID</string>
+    <string name="promo_code_amount">Promo Code Applied :</string>
+    <string name="default_min">1 \nmin</string>
+
+
+    <!--New Update Driver Information-->
+    <string name="driver_name">Alfred Austin</string>
+    <string name="car_number">DL-06 NS 2578</string>
+    <string name="car_model">scorpio</string>
+
+
+    <string name="category_1">Small car</string>
+    <string name="category_2">Family car</string>
+    <string name="category_3">VIP car</string>
+
+
+    <string name="whatsApp">+966 50 424 3072</string>
+    <string name="emailId">info@sareeie.com</string>
+    <string name="twitter">.@Sareeie3</string>
+    <string name="price_calculator">Price calculator</string>
+
+    <string name="cancel_trip">Cancel Trip</string>
+    <string name="do_you_want_cancel_trip_now">Do you want to cancel trip now?</string>
+    <string name="feed_back">Feedback</string>
+    <string name="title_activity_coinwallet">coinwallet</string>
+
+
+</resources>

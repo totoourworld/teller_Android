@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bt_white"
+        android:paddingBottom="2dp">
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/places_ic_search" />
+
+        <EditText
+            android:id="@+id/tv_dialog_destination"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/left_button"
+            android:layout_toRightOf="@+id/search_icon"
+            android:background="@null"
+            android:hint="@string/enter_destination"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/bt_light_gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/bt_light_gray" />
+
+            <TextView
+                android:id="@+id/dialog_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/cancel"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bt_light_gray" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/dialogAutoCompleteList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+</LinearLayout>

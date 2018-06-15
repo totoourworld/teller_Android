@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context="com.example.arcane.RegisterActivity" >
+
+    <ImageView
+        android:id="@+id/Mainimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:src="#F5FFFA"
+         android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/maintatitle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:text="Arcane"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/signout"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Signout"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@color/theme"
+        android:layout_marginBottom="15dp"/>
+
+    <Spinner
+        android:id="@+id/profilelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/maintatitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/signout"
+        android:background="@android:color/transparent"
+        android:drawSelectorOnTop="true"
+        android:popupBackground="#ffffff"
+        android:prompt="@string/select"
+        android:textColor="@android:color/white"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/maintatitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/user1" />
+
+   
+</RelativeLayout>

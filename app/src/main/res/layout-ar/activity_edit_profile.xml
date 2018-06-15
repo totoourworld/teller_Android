@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    android:fitsSystemWindows="true"
+    tools:context=".EditProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color">
+
+        <com.custom.BTextView
+            android:id="@+id/textView14"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/edit_profile"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <ImageButton
+            android:id="@+id/recancel"
+            style="@style/Back_button_Style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+                <com.rider.xenia.CircularImageView1
+                    android:id="@+id/edit_profile_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/circleuser"
+                    android:scaleType="centerCrop" />
+
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/edit_profile_image"
+                    android:layout_alignRight="@+id/edit_profile_image"
+                    android:src="@drawable/plus" />
+
+
+            </RelativeLayout>
+
+            <!--   <com.rider.hire_me.CircularImageView1
+                   android:id="@+id/edit_profile_image"
+                   android:layout_width="@dimen/image_width"
+                   android:layout_height="@dimen/image_width"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/circleuser"
+                   app:border_color="@android:color/white"
+
+
+
+
+                   app:border_width="1dp"
+                   android:layout_marginTop="20dp"
+                    android:clickable="true"
+                   app:layout_behavior="com.rider.arcane_android.AvatarImageBehavior" />-->
+
+            <LinearLayout
+                android:id="@+id/linear_root_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <com.custom.BTextView
+                    android:id="@+id/edit_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/bt_black"
+                    app:btextfont="@string/RobotoCondensed" />
+
+            </LinearLayout>
+
+            <com.custom.BEditText
+                android:id="@+id/edit_first_name"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/First_Name"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BEditText
+                android:id="@+id/edit_last_name"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/Last_Name"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <!--<com.custom.BEditText-->
+            <!--android:id="@+id/edit_email"-->
+            <!--style="@style/EditTextStyle_Style"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:enabled="false"-->
+            <!--android:hint="@string/Email"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--app:btextfont="@string/RobotoCondensed" />-->
+
+            <com.custom.BEditText
+                android:id="@+id/edit_mobile"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/Mobile"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:textSize="14sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <com.custom.BTextView
+                        android:id="@+id/tv_change_pswd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/change_password"
+                        android:layout_alignParentRight="true"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/bt_black"
+                        android:textSize="15sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+                    <Switch
+                        android:id="@+id/edit_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/abailable_button_selector"
+                        android:checked="false"
+                        android:padding="0dp"
+                        android:textColor="#ffffff"
+                        android:textOff=""
+                        android:textOn=""
+                        android:thumb="@drawable/customswitchselector"
+                        android:track="@drawable/custom_track" />
+                    <!--<com.custom.BTextView-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/change_password"-->
+                    <!--android:textColor="@color/header_text"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:gravity="left"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignParentStart="true" />-->
+                    <!--<Switch-->
+                    <!--android:id="@+id/edit_switch"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_marginLeft="0dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:background="@drawable/abailable_button_selector"-->
+                    <!--android:checked="false"-->
+                    <!--android:padding="0dp"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:textOff=""-->
+                    <!--android:textOn=""-->
+                    <!--android:thumb="@drawable/customswitchselector"-->
+                    <!--android:track="@drawable/custom_track" />-->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/edit_change_password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.custom.BEditText
+                        android:id="@+id/edit_old_password"
+                        style="@style/EditTextStyle_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/Old_Password"
+                        android:inputType="textPassword"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+                    <com.custom.BEditText
+                        android:id="@+id/edit_new_password"
+                        style="@style/EditTextStyle_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/New_Password"
+                        android:inputType="textPassword"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+                    <com.custom.BEditText
+                        android:id="@+id/edit_confirm_password"
+                        style="@style/EditTextStyle_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/Confirm_password"
+                        android:inputType="textPassword"
+                        android:textSize="14sp"
+                        app:btextfont="@string/RobotoCondensed" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.custom.BButton
+        android:id="@+id/edit_bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/yellow_color"
+        android:text="@string/save"
+        app:btextfont="@string/RobotoCondensed" />
+</RelativeLayout>

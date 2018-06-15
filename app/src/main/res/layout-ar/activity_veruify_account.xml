@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <com.custom.BTextView
+            android:id="@+id/CREATEANACCOUNT"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/verify_accoount"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/Back_button_Style"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_layout"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <com.custom.BEditText
+                    android:id="@+id/name"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:layout_marginTop="25dp"
+                    android:hint="@string/First_Name"
+                    android:inputType="text"
+                    app:btextfont="@string/RobotoCondensed" />
+                <com.custom.BEditText
+                    android:id="@+id/edit_last_name"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="7dp"
+                    android:hint="@string/Last_Name"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BEditText
+                    android:id="@+id/email"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/Email"
+                    android:layout_marginTop="7dp"
+                    android:textSize="14sp"
+                    android:inputType="textEmailAddress"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BEditText
+                    android:id="@+id/mobile_no"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="7dp"
+                    android:hint="@string/Mobile"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    app:btextfont="@string/RobotoCondensed" />
+
+
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/loadimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/or" />
+
+
+            <Button
+                android:id="@+id/signinlink"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="70dp"
+                android:background="@null"
+                android:text="@string/sign_in"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/fbgp"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingBottom="20dp">-->
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/msg"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:text="@string/email_and_mobile_number_to_send_ride"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="15dp"-->
+            <!--android:visibility="gone" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/googleplus"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/layout"-->
+            <!--android:text="Google"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textStyle="bold"-->
+            <!--android:visibility="gone" />-->
+            <!--</LinearLayout>-->
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageView3"
+                android:src="@drawable/paypal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <com.custom.BTextView
+        android:id="@+id/facebookbns"
+        style="@style/Bottom_button_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:background="@color/yellow_color"
+        android:text="@string/submit"
+        android:textColor="@color/blue_color"
+        android:textAllCaps="true"
+        app:btextfont="@string/RobotoCondensed" />
+
+</RelativeLayout>

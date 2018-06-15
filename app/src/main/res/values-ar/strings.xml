@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">سريع</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_signin">SigninActivity</string>+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_payment_details">PaymentDetailsActivity</string>
+    <string name="title_activity_scanactivity">SacnActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_resetpassword">Resetpassword</string>
+    <string name="title_activity_request">RequestActivity</string>
+    <string name="title_activity_fare_review">FareReviewActivity</string>
+    <string name="title_activity_pay_pal">PayPalActivity</string>
+    <string name="title_activity_google_plus">GooglePlusActivity</string>
+    <string name="title_activity_requestnext">RequestnextActivity</string>
+    <string name="title_activity_regin_search">ReginSearchActivity</string>
+
+    <!-- ************Need To Change the following Codes ******************** -->
+
+    <string name="googleapikey">AIzaSyDJ6wbuMgKlCG4hCFlYBuKha4AeV7PaxSs</string>
+    <string name="googleprojectid">391226754417</string>
+    <string name="facebook_app_id">886976498098633</string>
+    <string name="banner_ad_footer">ca-app-pub-8123127367442961/9773585937</string>
+    <!-- <string name="LiveUrl">http://demo.cogzidel.com/arcanemobile/users/</string>
+     <string name="LiveUrl1">http://demo.cogzidel.com/arcanemobile/drivers/</string>
+     <string name="LiveUrl2">http://demo.cogzidel.com/arcanemobile/administrator/</string>-->
+    <string name="version">v2.1.1</string>
+    <!-- <string name="LiveUrl">http://products.cogzidel.com/arcanemobile/users/</string>
+     <string name="LiveUrl1">http://products.cogzidel.com/arcanemobile/drivers/</string>
+     <string name="LiveUrl2">http://products.cogzidel.com/arcanemobile/administrator/</string>-->
+
+    <string name="LiveUrl">http://aploads.com/development/Taxi/index.php/userapi/</string>
+    <string name="LiveUrl1">http://products.cogzidel.com/arcanemobile/drivers/</string>
+    <string name="LiveUrl2">http://products.cogzidel.com/arcanemobile/administrator/</string>
+
+    <!-- ****************************************************************** -->
+
+
+    <string name="drawer_open">القائمة المنزلق فتح</string>
+    <string name="drawer_close">القائمة المنزلق مغلقة</string>
+    <string name="gcm_deleted">غم: تم حذف الخادم٪ 1 $ d من الرسائل المعلقة!</string>
+    <string name="gcm_registered">غم: تم تسجيل الجهاز بنجاح!</string>
+    <string name="gcm_unregistered">غم: الجهاز غير مسجل بنجاح!</string>
+    <string name="gcm_message">غم: لقد حصلت على رسالة!</string>
+    <string name="gcm_error">غم: إرور (٪ 1 $ s).</string>
+    <string name="gcm_recoverable_error">غم: خطأ قابل للاسترداد (٪ 1 $ s).</string>
+    <string name="server_registering">جار محاولة (محاولة٪ 1 $ d /٪ 2 $ d) لتسجيل الجهاز على خادم تجريبي.</string>
+    <string name="server_registered">خادم تجريبي: تمت إضافة الجهاز بنجاح!</string>
+    <string name="server_unregistered">خادم تجريبي: تمت إزالة الجهاز بنجاح!</string>
+    <string name="server_register_error">تعذر تسجيل الجهاز على خادم العرض التجريبي بعد٪ 1 $ d من المحاولات.</string>
+    <string name="server_unregister_error">تعذر إلغاء تسجيل الجهاز على الخادم التجريبي (٪ 1 $ s).</string>
+    <string name="contact_us">اتصل بنا</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="profile_list">
+        <item> الملف الشخصي</item>
+        <item>   التنبيهات </item>
+        <item> مشاويري</item>
+        <!-- <item>     Rating  </item>-->
+        <item>   تسجيل الخروج </item>
+        <item>  اتصل بنا </item>
+        <item> شروط الاستخدام </item>
+    </string-array>
+
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <!-- Nav Drawer List Item Icons -->
+        <!-- Keep them in order as the titles are in -->
+
+            <item>@drawable/man11</item>
+            <item>@drawable/sos_new1</item>
+            <item>@drawable/history11</item>
+            <item>@drawable/logout1</item>
+            <!--   <item>@drawable/term_of_use</item>-->
+        <item>@drawable/contact_us</item>
+        <item>@drawable/term_of_use</item>
+            <item>@drawable/support1</item>
+
+    </array>
+
+    <!-- </array> -->
+
+    <string name="editprofile">تعديل الملف الشخصي</string>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">رمز البند</string>
+    <string name="CreditCardNumberHelp">أدخل رقم بطاقة الائتمان أو الخصم</string>
+    <string name="ExpirationDateHelp">تاريخ انتهاء الصلاحية (مم / د)</string>
+    <string name="SecurityCodeHelp">رمز الحماية</string>
+    <string name="ZipHelp">الرمز البريدي لعنوان إرسال الفواتير</string>
+
+
+    <string name="Credit_card">بطاقة الائتمان / الخصم</string>
+    <string name="ADD_PAYMENT">إضافة دفعة</string>
+    <string name="trip_has_been_completed">سيتم خصم المبلغ مرة واحدة وقد تم الانتهاء من الرحلة.</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="Done">فعله</string>
+    <string name="Comming_Soon">قريبا</string>
+    <string name="Invite_to_Ride_Share">دعوة للمشاركة في المشاركة</string>
+    <string name="Send">إرسال</string>
+    <string name="Last_Name">الكنية</string>
+    <string name="Mobile">التليفون المحمول</string>
+    <string name="reg_Name">اسم</string>
+    <string name="Password">كلمه السر</string>
+    <string name="re_Password">تأكيد كلمة المرور</string>
+    <string name="Account">الحساب</string>
+    <string name="Email">البريد الإلكتروني</string>
+    <string name="PayPal_Email">بريد باي بال</string>
+    <string name="First_Name">الاسم الاول</string>
+    <string name="PROFILE">الملف الشخصي</string>
+    <string name="Fare_Summary">ملخص أجرة</string>
+    <string name="Amount_paid">المبلغ المستحق للدفع</string>
+    <string name="$25">$25.00</string>
+    <string name="Submit">عرض</string>
+    <string name="Select_stars">حدد 1-5 نجوم لتقييم السائق الخاص بك</string>
+    <string name="Leave_command">اترك الأمر</string>
+    <string name="Fare_Review">أنا بحاجة إلى مراجعة أجرة</string>
+    <string name="Go_to_home">انتقل إلى الخريطة</string>
+    <string name="Promo">الترويجي</string>
+    <string name="Fare_review">مراجعة الأجرة</string>
+    <string name="Trip_ID">معرف الرحلة</string>
+    <string name="Driver_ID">معرف برنامج التشغيل</string>
+    <string name="Pickup_Location">اختر موقعا</string>
+    <string name="Drop_Location">إسقاط الموقع</string>
+    <string name="Total_Distance">المسافة الكلية</string>
+    <string name="Charge">الشحنة</string>
+    <string name="Waiting_Charge">رسوم الانتظار</string>
+    <string name="Tax">ضريبة</string>
+    <string name="Total">مجموع</string>
+    <string name="SIGN_IN">تسجيل دخول</string>
+
+    <string name="REGISTER">تسجيل</string>
+    <string name="New_Password">كلمة السر الجديدة</string>
+    <string name="Old_Password">كلمة المرور القديمة</string>
+    <string name="Confirm_password">تأكيد كلمة المرور</string>
+    <string name="Edit">تصحيح</string>
+    <string name="Back">الى الخلف</string>
+    <string name="REGION_SEARCH">بحث المنطقة</string>
+    <string name="Enable_Region_Search">تمكين بحث المنطقة</string>
+    <string name="Next">التالى</string>
+    <string name="CREATE_AN_ACCOUNT">انشئ حساب</string>
+    <string name="email_and_mobile_number_to_send_ride">نحن نستخدم معرف البريد الإلكتروني ورقم الجوال لإرسال تأكيد ركوب واستلام.</string>
+    <string name="Requesting">طلب ...</string>
+    <string name="Cancel_Request">إلغاء الطلب</string>
+    <string name="REQUESTING">طلب</string>
+    <string name="Enter_destination">أدخل وجهتك</string>
+    <string name="Once_car_share_the_destination">مرة كنت في السيارة، سنقوم تقاسم الوجهة مع السائق الخاص بك.</string>
+    <string name="Email_Address">عنوان البريد الإلكتروني</string>
+    <string name="RESET_PASSWORD">إعادة تعيين كلمة المرور</string>
+    <string name="FORGOT_PASSWORD">هل نسيت كلمة المرور</string>
+    <string name="Enter_your_email_address">أدخل عنوان بريدك الإلكتروني وسنرسل إليك رابطا لإعادة تعيين كلمة المرور*</string>
+    <string name="Enter_Place_Here">أدخل مكان هنا</string>
+    <string name="Contact1">جهة الاتصال 1</string>
+    <string name="Contact2">جهة الاتصال 2</string>
+    <string name="Contact3">جهة الاتصال 3</string>
+    <string name="Emaill">البريد الإلكتروني 1</string>
+    <string name="Email2">البريد الإلكتروني 2</string>
+    <string name="UPDATE">تحديث</string>
+    <string name="Emergency_Email">البريد الإلكتروني للطوارئ</string>
+    <string name="SETTINGS">إعدادات</string>
+    <string name="Emergency_Contact">الاتصال بالطوارىء</string>
+    <string name="VERIFY_PROFILE">تحقق من الملف الشخصي</string>
+    <string name="PayPal_EmailAddress">عنوان البريد الإلكتروني لبيبال</string>
+
+    <string name="Mobile_Number">رقم الهاتف المحمول</string>
+    <string name="SOS">نجدة</string>
+    <string name="Alert_Email">تنبيه فيا E-ميل</string>
+    <string name="Alert_Facebook">أليرت فيا الفيسبوك</string>
+    <string name="Settings">الاعدادات</string>
+    <string name="Alert_SMS">تنبيه عبر الرسائل النصيه</string>
+    <string name="Staff_Details">تفاصيل الموظفين</string>
+    <string name="Name">اسم</string>
+    <string name="Medium_Text">نص متوسط</string>
+    <string name="Age">عمر</string>
+    <string name="Gender">جنس</string>
+    <string name="Experience">تجربة</string>
+    <string name="Invite_Split">دعوة إلى سبليت</string>
+    <string name="Search_contacts">اتصالات بحث</string>
+    <string name="Scan_a_credit_card_card.io">مسح بطاقة الائتمان مع card.io</string>
+    <string name="PayPal_Payment">الدفع باي بال</string>
+    <string name="Credit_Card_Payment">الدفع ببطاقات الائتمان</string>
+    <string name="Mercadopago_Payment">ميركادوباغو الدفع</string>
+    <string name="Cash_Hand">النقد في الصندوق</string>
+    <string name="Invite_Ride_Share">دعوة للمشاركة في المشاركة</string>
+    <string name="Search_name">اسم البحث</string>
+    <string name="PICKUP_LOCATION">اختر موقعا</string>
+    <string name="Getting_location">الحصول على الموقع</string>
+    <string name="Driver_Name">اسم السائق</string>
+    <string name="Driver_Car">سائق سيارة</string>
+    <string name="Rate">معدل</string>
+    <string name="REQUEST">طلب</string>
+    <string name="Pickup_Minutes">لقطات دقيقة</string>
+    <string name="CANCEL">إلغاء</string>
+    <string name="CONFIRMATION">التأكيد</string>
+    <string name="content">يحتوى</string>
+    <string name="ETA">ETA</string>
+    <string name="MAX_SIZE">اقصى حجم</string>
+    <string name="MIN_FARE">الحد الأدنى للأجرة</string>
+    <string name="GET_FARE_ESTIMATE">الحصول على تقدير أجرة</string>
+    <string name="SPLITING_1_WAY">تقسيم الأجرة 1 الطريق</string>
+    <string name="Accepted_RiderName">مقبول اسم رايدر</string>
+    <string name="NOT_SPLITING">عدم تقسيم الأجرة</string>
+    <string name="Not_Splited_RiderName">لا سبليتد رايدر الاسم</string>
+    <string name="DECLINE">انخفاض</string>
+    <string name="ACCEPT">قبول</string>
+    <string name="name_reg">اسم</string>
+    <string name="with_name">مع الاسم</string>
+    <string name="User_name">اسم المستخدم</string>
+    <string name="Phone_no">رقم الهاتف.</string>
+    <string name="network_error">حدث خطأ في اتصال الشبكة ...</string>
+    <string name="please_connect">لا توجد شبكة يرجى الاتصال</string>
+    <string name="ok">حسنا</string>
+
+    <string name="waiting_cancel">في انتظار الإلغاء من برنامج التشغيل.</string>
+    <string name="get_location">الحصول على الموقع</string>
+    <string name="fare_details">تفاصيل الأجرة</string>
+    <string name="begin_trip">رحلة البداية</string>
+    <string name="begin_now">تبدأ رحلتك الآن.</string>
+    <string name="trip_canceled">تم إلغاء الرحلة</string>
+    <string name="cancel_reason">"رحلة إلغاء بواسطة سائق بسبب"</string>
+    <string name="driver_pickyou">"سوف سائق يختار لك داخل"</string>
+    <string name="reachyousoon">الوصول إليك قريبا.</string>
+    <string name="exit">ىخرج</string>
+    <string name="close_arcane">هل تريد إغلاق أركين؟</string>
+    <string name="yes">نعم فعلا</string>
+    <string name="cancel">إلغاء</string>
+    <string name="driver_arrived">وقد وصل سائق الآن.</string>
+    <string name="gps_disabled">يبدو أن غس الخاص بك معطلة، هل تريد تمكينه؟</string>
+    <string name="no">لا</string>
+    <string name="driver_pick_loc">"سوف سائق يختار لك على موقعك داخل"</string>
+    <string name="driver_drop">"سوف سائق إسقاط لك على وجهتك داخل"</string>
+    <string name="braintree_payment">برينتري الدفع</string>
+    <string name="thanks_driving">شكرا لركوب الخيل.</string>
+    <string name="cash_received">المبلغ المستلم</string>
+    <string name="promoaccepted">تم قبول العرض الترويجي.</string>
+    <string name="payment_completed">"اكتملت عملية الدفع بنجاح."</string>
+    <string name="arrives_within">" يصل داخل"</string>
+    <string name="listempty">"لا توجد رحلات في حسابك"</string>
+    <string name="network">"لا يوجد اتصال بالإنترنت! إعادة المحاولة"</string>
+
+
+    <string name="SFUIDisplay_Light">SFUIDisplay-Light.otf</string>
+    <string name="SFUIDisplay_Medium">SFUIDisplay-Medium.otf</string>
+    <string name="SFUIDisplay_Regular">SFUIDisplay-Regular.otf</string>
+    <string name="SFUIDisplay_Thin">SFUIDisplay-Thin.otf</string>
+    <string name="MyriadPro_Regular">MyriadPro-Regular.otf</string>
+    <string name="JosefinSans_Bold">JosefinSans-Bold.otf</string>
+
+
+    <string name="destination_location">موقع وجهة</string>
+    <string name="enter_destination">أدخل الوجهة هنا</string>
+
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="set_pickup_location">تأكيد الطلب</string>
+    <string name="do_you_want_exit_now">هل تريد الخروج الآن؟</string>
+    <string name="min_fare">الحد الأدنى للأجرة</string>
+    <string name="loading">جار التحميل...</string>
+    <string name="accept_your_request">تم تاكيد طلبك </string>
+    <string name="all_drivers_are_busy">جميع السائقين مشغولون.</string>
+    <string name="desh">--</string>
+    <string name="searching_driver">البحث عن سائق ..</string>
+    <string name="powered_by_cogzidel_technologies">مدعوم من تقنيات كوغزيديل</string>
+    <string name="no_destination_address_found">لم يتم العثور على عنوان الوجهة</string>
+    <string name="no_pickup_address_found">لم يتم العثور على عنوان التقاط</string>
+    <string name="no_network_internet_connection_failed">لا شبكة .. فشل الاتصال بالإنترنت</string>
+    <string name="_0_nmin">0 مين</string>
+    <string name="waiting_for_driver">في انتظار السائق. شكرا لصبرك</string>
+    <string name="driver_not_available">السائق غير متوفر</string>
+    <string name="sorryNo_nearby_driver_found">معذرة ! لم يتم العثور على برنامج تشغيل قريب.يرجى تجربة موقع بيك آب آخر</string>
+    <string name="please_wait">أرجو الإنتظار...</string>
+    <string name="please_enter_destination">الرجاء إدخال عنوان الوجهة!</string>
+    <string name="connection_failed">أخفق الاتصال بالإنترنت</string>
+
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="change_password">تغيير الرقم السري</string>
+    <string name="save">حفظ</string>
+    <string name="profile_updated">تم تحديث الملف الشخصي بنجاح</string>
+    <string name="internet_connection_failed">أخفق الاتصال بالإنترنت</string>
+    <string name="no_internet_connection">لا تتوفر الإنترنت</string>
+    <string name="please_select_a_profile_image">الرجاء تحديد صورة الملف الشخصي</string>
+    <string name="camera">الة تصوير</string>
+    <string name="gallery">صالة عرض</string>
+    <string name="enter_old_password">أدخل كلمة المرور القديمة</string>
+    <string name="enter_new_password">أدخل كلمة مرور جديدة</string>
+    <string name="re_enter_password">إعادة إدخال كلمة المرور</string>
+    <string name="password_not_match">كلمة المرور غير متطابقة</string>
+    <string name="old_password_is_not_correct">كلمة المرور القديمة ليست كوركت</string>
+    <string name="uploading">تحميل ...</string>
+
+    <string name="trip_history">تريب هيستوري</string>
+    <string name="all_rides">جميع ركوب الخيل</string>
+    <string name="add_payment">إضافة دفعة</string>
+    <string name="comming_soon">قريبا</string>
+    <string name="comming_soon_dots">قريبا...</string>
+    <string name="end_trip">إند تريب</string>
+    <string name="hire_me_card">بطاقة سريع</string>
+    <string name="amount_payable">تكلفة المشوار</string>
+    <string name="fare_review">استعراض فاري</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="select_1_5_stars_to_rate_your_driver">يرجى تقييم برنامج التشغيل (1 ل باد &amp; أمب؛ 5 لأفضل)</string>
+    <string name="skip">تخطى</string>
+    <string name="done">فعله</string>
+    <string name="promo_code">رمز ترويجي</string>
+    <string name="apply">تطبيق</string>
+    <string name="submit">عرض</string>
+    <string name="date_time">تاريخ الوقت</string>
+    <string name="not_spliting_fare">عدم تقسيم الأجرة</string>
+
+    <string name="join_us">انضم إلينا</string>
+    <string name="join">انضم</string>
+    <string name="sign_in">تسجيل دخول</string>
+    <string name="or_sign_up_with">أو الاشتراك مع</string>
+    <string name="facebook">فيس بوك</string>
+    <string name="cancel_request">إلغاء الطلب</string>
+    <string name="forget_password">هل نسيت كلمة المرور</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="settings">إعدادات</string>
+    <string name="email3">البريد الإلكتروني 3</string>
+    <string name="password">كلمه السر</string>
+    <string name="sign_up">سجل</string>
+    <string name="forgot_password">هل نسيت كلمة المرور ؟</string>
+    <string name="or_sign_in_with">أو سجل الدخول باستخدام</string>
+    <string name="google">جوجل</string>
+    <string name="my_rides">بلدي ركوب الخيل</string>
+    <string name="notification">إعلام</string>
+    <string name="pay_with">ادفع عن طريق:</string>
+    <string name="paypal_payment">دفع باي بال</string>
+    <string name="cash_on_hand">النقد في الصندوق</string>
+    <string name="pickup">امسك</string>
+    <string name="pickup_date">اختر تاريخا</string>
+    <string name="pickup_time">اختار المعاد</string>
+    <string name="carname">اسم السيارة</string>
+    <string name="future_trip_detail_is_empty">تفاصيل رحلة المستقبل فارغة.</string>
+    <string name="we_are_reaching_at">تحرك نحو الوجهه:</string>
+    <string name="time">زمن</string>
+    <string name="distance">مسافه: بعد</string>
+    <string name="amount">كمية</string>
+    <string name="tax"> ضريبة</string>
+    <string name="waiting_time">وقت الانتظار</string>
+    <string name="service">الخدمات</string>
+    <string name="paypal">باي بال</string>
+    <string name="trip_detail">تريب التفاصيل</string>
+    <string name="rider_name">اسم رايدر</string>
+    <string name="drop">قطرة</string>
+    <string name="date">تاريخ</string>
+    <string name="trip_detail_is_empty">تفاصيل الرحلة فارغة.</string>
+
+    <string name="push_notification">دفع الإعلام:</string>
+    <string name="facebook_access_token">الفيسبوك الوصول رمز:</string>
+    <string name="on_cancel">على إلغاء الأمر:</string>
+    <string name="on_error">على خطأ:</string>
+    <string name="response_error">خطأ الاستجابة:</string>
+    <string name="required">مطلوب</string>
+    <string name="login_canceled_by_user">تسجيل الدخول إلغاء من قبل المستخدم!</string>
+    <string name="login_unsuccessful">لم يتم تسجيل الدخول!</string>
+    <string name="person_info_is_null">معلومات الشخص فارغة</string>
+    <string name="you_have_already_logged_in_another_device">قمت بتسجيل بالفعل في جهاز آخر.</string>
+
+    <string name="internet_error">خطأ الانترنت</string>
+    <string name="invalid_email_id">البريد الإلكتروني غير صالح معرف</string>
+    <string name="password_lenght_should_be_alleast">يجب أن يكون طول كلمة السر آل الأقل 6</string>
+    <string name="warning">تحذير!</string>
+    <string name="check_your_emailId">تحقق ID البريد الإلكتروني الخاص بك</string>
+
+    <string name="please_help_i_am_in_danger">الرجاء المساعدة، وأنا في خطر وتحتاج إلى المساعدة أنقر هنا لمشاهدة مكاني</string>
+    <string name="choose_an_email_client">اختيار عميل البريد الإلكتروني:</string>
+    <string name="message_sent_successfully">تم إرسال الرسالة بنجاح</string>
+    <string name="generic_failure">فشل عام</string>
+    <string name="no_service">لا توجد خدمة</string>
+    <string name="null_PDU">PDU باطل</string>
+    <string name="radio_off">الراديو</string>
+    <string name="sms_delivered">SMS تسليم</string>
+    <string name="sms_not_delivered">SMS لم يتم تسليمها</string>
+    <string name="atleast_one_email_required">تتطلب أتلست واحد البريد الإلكتروني</string>
+    <string name="invalid_email_1_field">البريد الإلكتروني غير صالح 1 الحقل</string>
+    <string name="invalid_email_2_field">البريد الإلكتروني غير صالح 2 الحقل</string>
+    <string name="invalid_email_3_field">البريد الإلكتروني غير صالح 3 الحقل</string>
+    <string name="atleast_one_contact_require">أتلست واحد الاتصال تتطلب</string>
+    <string name="invalid_mobile_number">رقم الجوال غير صالح</string>
+    <string name="enter_your_destination">أدخل وجهتك</string>
+    <string name="your_destination_address_is_not_available">عنوان وجهتك غير متوفر.</string>
+    <string name="could_you_retrive_fare">لا تعذر استرداد تقدير أجرة في هذا الوقت</string>
+
+    <string name="there_is_no_connection">لا توجد شبكة الرجاء الاتصال.</string>
+    <string name="enter_promo_code">أدخل الرمز الترويجي</string>
+    <string name="fare_page">Fare Page</string>
+    <string name="cah_payment_received">الدفعة النقدية التي يتلقاها السائق.</string>
+    <string name="invalid_promo_code">الرمز الترويجي صالح</string>
+    <string name="payment_complete_successfully">الانتهاء من الدفع بنجاح.</string>
+    <string name="network_connection_error">خطأ في اتصال الشبكة ...</string>
+    <string name="payment_status">مركز الدفع</string>
+    <string name="invalid_userId">معرف المستخدم غير صالح</string>
+    <string name="your_request_confirmed">أكد طلبك</string>
+    <string name="arcane_driver">سائق غامضة:</string>
+    <string name="all_drivers_currently_busy">جميع السائقين مشغولون حاليا، يرجى المحاولة مرة أخرى</string>
+    <string name="error">خطأ:</string>
+    <string name="please_select_valid_time">الرجاء اختيار صحيح مرة</string>
+    <string name="no_network_please_connect">لا توجد شبكة الرجاء الاتصال.</string>
+    <string name="select_all_fields">تحديد كافة المجالات</string>
+    <string name="fare_lookup_failed">أجرة أخفق البحث</string>
+    <string name="message">رسالة!</string>
+    <string name="select_max_1_contacts">تحديد الحد الأقصى ل1 اتصالات فقط</string>
+    <string name="no_contacts_in_your_contact_list">أية جهات اتصال في قائمة الاتصال الخاصة بك.</string>
+    <string name="alert">إنذار</string>
+
+
+    <string name="sorry_internet_connection_is_too_weak">معذرة! اتصال الإنترنت ضعيفة جدا.</string>
+    <string name="latitude">لاتيتيود =</string>
+    <string name="longitude">، لونجيتيود =</string>
+    <string name="current_loc">الموقع الحالي</string>
+
+    <string name="fare_amount">مبلغ أجرة</string>
+    <string name="_1800_80">$1800.80</string>
+    <string name="promo_amount">الترويجي المبلغ</string>
+    <string name="total_pay_amount">إجمالي مبلغ الدفع</string>
+    <string name="Trip_id">معرف الرحلة</string>
+    <string name="promo_code_amount">الرمز الترويجي المبلغ:</string>
+    <string name="default_min">1 \ nدقيقة</string>
+
+
+    <string name="category_1">سيارةً عائلية.</string>
+    <string name="category_2">سيارة صغيرة</string>
+    <string name="category_3">سيارة فارهة</string>
+
+    <string name="Hatchback">سيارةً عائلية.</string>
+    <string name="Sedan">سيارة صغيرة</string>
+    <string name="SUV">سيارة فارهة</string>
+
+    <string name="whatsApp">+966 50 424 3072</string>
+    <string name="emailId">info@sareeie.com</string>
+    <string name="twitter">.@Sareeie3</string>
+    <string name="cancel_trip">إلغاء الرحلة.</string>
+    <string name="do_you_want_cancel_trip_now">هل تريد إلغاء الرحلة الآن؟</string>
+
+    <string name="RobotoCondensed">RobotoCondensed-Regular.otf</string>
+    <string name="feed_back">ردود الفعل</string>
+
+
+</resources>

@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:text="Enter your Promo Code" />
+
+    <EditText
+        android:id="@+id/settg_contact1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_editext"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/settg_contact1"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:onClick="onClick"
+        android:text="Enter"
+        android:layout_alignRight="@+id/settg_contact1"
+        android:layout_alignEnd="@+id/settg_contact1" />
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/settg_contact1"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:text="Skip"
+        android:textColor="#000"
+        android:layout_alignLeft="@+id/settg_contact1"
+        android:layout_alignStart="@+id/settg_contact1" />
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        android:text="" />
+
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/hr_line"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_alignEnd="@+id/editText1" />-->
+
+
+</RelativeLayout>

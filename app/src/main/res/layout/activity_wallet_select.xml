@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.rider.xenia.WalletSelectActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color">
+
+        <com.custom.BTextView
+            android:id="@+id/textView14"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WALLET_ORDER"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <ImageButton
+            android:id="@+id/recancel"
+            style="@style/Back_button_Style"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_below="@+id/header_layout"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".35">
+
+            <ImageView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/imgCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/card_dollar_purple"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/txtHolderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:text="Lao Tester"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".65"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="Bonus : International Currency Account"
+                android:textColor="@color/cyan"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnNaira"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/bg_border_blue_rounded"
+                        android:padding="15dp"
+                        android:text="NAIRA"
+                        android:textColor="@color/blue_light"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btnEuro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/bg_border_blue_rounded"
+                        android:padding="15dp"
+                        android:text="EUR"
+                        android:textColor="@color/blue_light"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnUsd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="15dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/blue_light"
+                        android:background="@drawable/bg_border_blue_rounded"
+                        android:layout_weight=".5"
+                        android:text="USD" />
+
+                    <Button
+                        android:id="@+id/btnZar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/bg_border_blue_rounded"
+                        android:padding="15dp"
+                        android:text="ZAR"
+                        android:textSize="15sp"
+                        android:textColor="@color/blue_light"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtJoin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="Join waiting list"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background">
+
+    <com.custom.BTextView
+        android:id="@+id/SIGN_IN"
+        style="@style/Header_Style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@color/blue_color"
+        android:text="@string/sign_in"
+        android:textAllCaps="true"
+        android:textColor="@color/bt_white"
+        app:btextfont="@string/RobotoCondensed" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/SIGN_IN"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.custom.BEditText
+                    android:id="@+id/signin_email"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="7dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:hint="@string/Email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/user_name_text"
+                    app:btextfont="@string/RobotoCondensed">
+
+                    <requestFocus />
+
+                </com.custom.BEditText>
+
+                <com.custom.BEditText
+                    android:id="@+id/signin_password"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="7dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="9dp"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.custom.BTextView
+                        android:id="@+id/signuplink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="3dp"
+                        android:text="@string/sign_up"
+                        android:textAllCaps="true"
+                        android:textColor="@color/heading_text"
+                        android:textSize="15sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+                    <com.custom.BTextView
+                        android:id="@+id/forgotpsw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="3dp"
+                        android:text="@string/forgot_password"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        app:btextfont="@string/RobotoCondensed" />
+
+                </RelativeLayout>
+
+
+                <com.custom.BTextView
+                    android:id="@+id/signin_dones"
+                    style="@style/Bottom_button_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/yellow_color"
+                    android:gravity="center"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue_color"
+                    android:textStyle="bold"
+                    app:btextfont="@string/RobotoCondensed" />
+
+
+            </LinearLayout>
+
+
+            <com.custom.BTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/facebookbns"
+                android:gravity="center"
+                android:text="@string/or_sign_in_with"
+                android:textAllCaps="true"
+                android:textColor="@color/facebook_text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <com.custom.BTextView
+                android:id="@+id/facebookbns"
+                style="@style/Bottom_button_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="7dp"
+                android:background="@color/facebook_text"
+                android:text="@string/facebook"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                app:btextfont="@string/RobotoCondensed" />
+
+            <!--   <com.facebook.login.widget.LoginButton
+                   android:id="@+id/facebookbns"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="30dp"
+                   android:text="Facebook"
+                   android:textColor="@color/bt_white"
+                   fb:login_text=""
+                   fb:logout_text=""
+                   android:background="@drawable/layout"
+                   android:textAppearance="?android:textAppearanceLarge"
+                   />
+-->
+            <!--<Button
+                android:id="@+id/facebookbn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/facebook_login" />-->
+
+            <Button
+                android:id="@+id/googleplus"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/layout"
+                android:text="@string/google"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- <ImageView
+         android:id="@+id/loadimage"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:scaleType="fitXY"
+         android:visibility="invisible"
+         android:src="@drawable/loading" />-->
+
+</RelativeLayout>

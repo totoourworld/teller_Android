@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:id="@+id/rl_driver_details"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:padding="2dp"
+    android:layout_marginBottom="50dp"
+    android:paddingBottom="50dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/iv_driver_profile"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/circleuser"
+                android:scaleType="centerCrop" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_driver_profile"
+                android:layout_toLeftOf="@+id/iv_driver_call_number"
+                android:orientation="vertical">
+
+                <com.custom.BTextView
+                    android:id="@+id/tv_driver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    app:btextfont="@string/RobotoCondensed"
+                    android:textColor="@color/black_dark"
+                    android:textSize="18sp" />
+
+
+
+                <com.custom.ProperRatingBar
+                    android:id="@+id/rb_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:prb_clickable="false"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_driver_call_number"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/call1"
+                android:padding="10dp"
+                android:background="@drawable/color_call"
+                android:layout_alignBottom="@+id/iv_driver_profile"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/view_trip_detail" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/car_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/suv_icon" />
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/car_icon"
+                android:orientation="vertical">
+
+
+                <com.custom.BTextView
+                    android:id="@+id/tv_car_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_car_number"
+                    android:layout_toRightOf="@+id/iv_driver_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="0dp"
+                    app:btextfont="@string/RobotoCondensed"
+                    android:textColor="@color/black_dark"
+                    android:textSize="18sp" />
+
+                <com.custom.BTextView
+                    android:id="@+id/tv_car_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_driver_name"
+                    android:layout_toRightOf="@+id/iv_driver_profile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    app:btextfont="@string/RobotoCondensed"
+                    android:textColor="@color/black_dark"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/view_trip_detail" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/car_route"
+                android:layout_width="40dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/route" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/car_route"
+                android:orientation="vertical">
+
+
+
+                <com.custom.BTextView
+                    android:id="@+id/detaildrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+
+
+                <com.custom.BTextView
+                    android:id="@+id/detailpickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/view_trip_detail" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/meter_icon"
+                android:layout_width="40dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/meter_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="3"
+                android:layout_toRightOf="@+id/meter_icon"
+                android:orientation="horizontal">
+
+                <com.custom.BTextView
+                    android:id="@+id/trip_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222222"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BTextView
+                    android:id="@+id/trip_diatance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    app:btextfont="@string/RobotoCondensed" />
+
+
+
+                <com.custom.BTextView
+                    android:id="@+id/trip_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222222"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/view_trip_detail" />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
